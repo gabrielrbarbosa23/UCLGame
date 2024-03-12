@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UCL game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text">
+        <h1>UCL game</h1>
+    </div>
+
+    <div class="button-container">
+        <img id="sim" class="button" src="./img/real.png" alt="Sim">
+        <img id="nao" class="button" src="./img/barca.png" alt="Não">
+    </div>
+
+<script>
+    const naoButton = document.getElementById('nao');
+    const simButton = document.getElementById('sim');
+
+    naoButton.addEventListener('mouseover', () => {
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        const randomX = Math.random() * (screenWidth - 200);
+        const randomY = Math.random() * (screenHeight - 50);
+        naoButton.style.position = 'absolute';
+        naoButton.style.left = randomX + 'px';
+        naoButton.style.top = randomY + 'px';
+    });
+
+    simButton.addEventListener('click', () => {
+        window.location.href = 'https://www.google.com/search?q=how+many+champions+does+real+madrid+have&rlz=1C1RXQR_pt-PTBR1090BR1090&oq=how+many+champions+does+rea&gs_lcrp=EgZjaHJvbWUqCQgBEAAYExiABDIGCAAQRRg5MgkIARAAGBMYgAQyCggCEAAYExgWGB4yCggDEAAYExgWGB4yCggEEAAYExgWGB4yCggFEAAYExgWGB4yCggGEAAYExgWGB4yCggHEAAYExgWGB4yCggIEAAYExgWGB7SAQg5NTA3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8';
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+* {
+    cursor: url('./img/UCL.png'), auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #040D12;
+    overflow: hidden;
+}
+
+.text {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.button {
+    border: none;
+    transition: all 0.3s ease;
+    margin-right: 50px;
+    cursor: url('./img/UCL.png'), auto;
+    width: 70px;
+    height: 70px;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
